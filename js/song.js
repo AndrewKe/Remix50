@@ -68,7 +68,7 @@ function loadRemixes() {
 	        	console.log(item);
 	            var song = videos[item];
 	            content = "<tr>";
-	            content += "<td><iframe src=\"" + "https://www.youtube.com/embed/" + song.id.videoId + "\"width=\"300\" height=\"380\" frameborder=\"0\" allowtransparency=\"true\"></iframe></td>"
+	            content += "<td><iframe src=\"" + "https://www.youtube.com/embed/" + song.id.videoId + "\"width=\"300\" height=\"200\" frameborder=\"0\" allowtransparency=\"true\"></iframe></td>"
 	            content += "<td>" + song.snippet.title + "</td>";
 
 	            content += "</tr>";
