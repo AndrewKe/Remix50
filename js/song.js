@@ -62,6 +62,8 @@ function loadRemixes() {
 	        	console.log(item);
 	            var song = videos[item];
 	            content = "<tr>";
+	            content += "<td>" + song.snippet.title + "</td>";
+
 	            content += "</tr>";
 	            table.append(content);
 	        }
