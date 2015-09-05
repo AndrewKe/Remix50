@@ -42,12 +42,12 @@ function loadRemixes() {
 		// Remixes
 
 		var remixQuery = queryString + " remix"
-		remixQuery.replace("Radio", '');
-		remixQuery.replace("Mix", '');
-		remixQuery.replace("Edit", '');
-		remixQuery.replace("radio", '');
-		remixQuery.replace("mix", '');
-		remixQuery.replace("edit", '');
+		remixQuery =remixQuery.replace("Radio", '');
+		remixQuery =remixQuery.replace("Mix", '');
+		remixQuery =remixQuery.replace("Edit", '');
+		remixQuery =remixQuery.replace("radio", '');
+		remixQuery =remixQuery.replace("mix", '');
+		remixQuery =remixQuery.replace("edit", '');
 
 		console.log(remixQuery);
 		var remixRequest = gapi.client.youtube.search.list({
