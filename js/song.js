@@ -18,7 +18,7 @@ function loadRemixes() {
         $("#title").html(data.name);
         $("#artist").html(data.artists[0].name);
 
-        var queryString = data.artists[0].name + " live";
+        var queryString = data.artists[0].name;
 
         console.log(queryString);
 
