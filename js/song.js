@@ -42,7 +42,7 @@ function loadRemixes() {
 		// Remixes
 
 		var remixQuery = queryString + " remix"
-
+		console.log(remixQuery);
 		var remixRequest = gapi.client.youtube.search.list({
 		  q: "Avicii Levels Remix",
 		  part: 'snippet',
