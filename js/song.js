@@ -60,25 +60,8 @@ function loadRemixes() {
 	        for (var item in videos)
 	        {
 	        	console.log(item);
-	            var song = data[item];
-	            var content = "<tr class = song_row data-href=song.html?track=" + song["id"] + ">";
-
-	            $('tr[data-href]').on("click", function() {
-	                document.location = $(this).data('href');
-	            });
-
-	            $()
-
-	            var albumImageURL = song["album"]["images"][2]["url"];
-
-	            content += "<td class = \"song_cell_data\"> <img src = \"" + albumImageURL + "\"> </td>";
-	            content += "<td class = \"song_cell_data\">" + song["name"] + "</td>";
-
-	            content += "<td class = \"song_cell_data\">" + song["album"]["name"] + "</td>";
-
-	            content += "<td class = \"song_cell_data\">" + song["artists"][0]["name"] + "</td>";
-	            content += "<td class = \"song_cell_data\">" + song["popularity"] + "</td>";
-
+	            var song = videos[item];
+	            content = "<tr>";
 	            content += "</tr>";
 	            table.append(content);
 	        }
