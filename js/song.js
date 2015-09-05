@@ -53,7 +53,7 @@ function loadRemixes() {
 		remixRequest.execute(function(response) {
 		  var videos = response.result.items
 		  console.log("test");
-		  console.log(videos);
+		  console.log(respone.result.items);
 		});
     });
 
