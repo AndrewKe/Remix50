@@ -35,12 +35,27 @@ index.html
         <div class = "row">
             <iframe id = "spotify_player" src="" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
 
-            <div id = "title"></div>
-            <div id = "artist"></div>
+            <span id = "title"></span>
+            <span id = "artist"></span>
 
             <iframe id = "youtubeMain" class="video w100" width="640" height="360" src="" frameborder="0" allowfullscreen></iframe>
 
             <script src="https://apis.google.com/js/client.js?onload=init"></script>
         </div>
+
+        <b>Remixes<b>
+        <div>
+            <table class = "table table-hover" id = "song_table">
+                <tr class = "song_headers">
+                    <th class="text-center"></th>
+                    <th class="text-center">Song</th>
+                    <th class="text-center">Album</th>
+                    <th class="text-center">Artist</th>
+                    <th class="text-center">Popularity</th>
+                </tr>
+
+            </table>
+        </div>
+
     </body>
 </html>
