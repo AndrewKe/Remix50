@@ -53,6 +53,7 @@ function loadRemixes() {
 		  part: 'snippet',
 		  order: 'relevance',
 		  type: 'video',
+		  maxResults: 20
 		});
 
 		remixRequest.execute(function(response) {
