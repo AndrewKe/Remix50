@@ -18,11 +18,10 @@ function loadRemixes() {
         $("#title").html(data.name);
         $("#artist").html(data.artists[0].name);
 
-        var queryString = data.name + data.artists[0].name;
+        var queryString = data.name + " " + data.artists[0].name; 
 
         console.log(queryString);
 
-	    console.log("Loading youtube remixes...");
 		var request = gapi.client.youtube.search.list({
 		  q: queryString,
 		  part: 'snippet',
@@ -40,8 +39,21 @@ function loadRemixes() {
 		  $("#youtubeMain").attr("src","https://www.youtube.com/embed/" + firstId);
 		});
 
-		
+		// Remixes
 
+		var remixQuery = queryString + " remix"
+
+		var remixRequest = gapi.client.youtube.search.list({
+		  q: remixQuery,
+		  part: 'snippet',
+		  order: 'relevance',
+		  type: 'video',
+		});
+
+		remixRequest.execute(function(response) {
+		  var videos = response.result.items
+		  console.log(videos);
+		});
     });
 
 
