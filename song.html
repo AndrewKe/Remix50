@@ -31,15 +31,16 @@ index.html
         <title>Remix 50!</title>
 
     </head>
-    <body id = "content">
+    <body id = "content" class = "container">
+        <div class = "row">
+            <iframe id = "spotify_player" src="" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
 
-        <iframe id = "spotify_player" src="" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+            <span id = "title"></span>
+            <span id = "artist"></span>
 
-        <span id = "title"></span>
-        <span id = "artist"></span>
+            <iframe id = "youtubeMain" class="video w100" width="640" height="360" src="" frameborder="0" allowfullscreen></iframe>
 
-        <iframe id = "youtubeMain" class="video w100" width="640" height="360" src="" frameborder="0" allowfullscreen></iframe>
-
-        <script src="https://apis.google.com/js/client.js?onload=init"></script>
+            <script src="https://apis.google.com/js/client.js?onload=init"></script>
+        </div>
     </body>
 </html>
