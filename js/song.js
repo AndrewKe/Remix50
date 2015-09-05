@@ -53,7 +53,7 @@ function loadRemixes() {
 		remixRequest.execute(function(response) {
 		  var videos = response.result.items
 		  console.log("test");
-		  console.log(respone.result.items);
+		  console.log(response.result.items);
 
 			var table = $("#song_table");
 	        $("#song_table").find("tr:gt(0)").remove();
