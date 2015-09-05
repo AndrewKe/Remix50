@@ -21,15 +21,15 @@ $(function() {
 
 function searchSongs()
 {
-    $.getJSON("spotify_search.php", {q: $("#q").val()}, function(data)
+    $.getJSON("https://api.spotify.com/v1/search?q="+$("#q").val()+"&type=track&limit=40", function(data)
     {
+        data = data.tracks.items;
         var table = $("#song_table");
         $("#song_table").find("tr:gt(0)").remove();
         for (var item in data)
         {
 
             var song = data[item];
-
             var content = "<tr class = song_row data-href=song.html?track=" + song["id"] + ">";
 
             $('tr[data-href]').on("click", function() {

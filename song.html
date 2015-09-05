@@ -10,37 +10,34 @@ index.html
     <head>
 
         <!-- http://getbootstrap.com/ -->
-        <link href="css/bootstrap.min.css" rel="stylesheet"/>
-        <link href="css/bootstrap-theme.min.css" rel="stylesheet"/>
+        <link href="./css/bootstrap.min.css" rel="stylesheet"/>
+        <link href="./css/bootstrap-theme.min.css" rel="stylesheet"/>
 
         <!-- app's own CSS -->
-        <link href="css/styles.css" rel="stylesheet"/>
+        <link href="./css/styles.css" rel="stylesheet"/>
 
         <!-- http://jquery.com/ -->
-        <script src="js/jquery-1.11.1.min.js"></script>
+        <script src="./js/jquery-1.11.1.min.js"></script>
 
         <!-- http://getbootstrap.com/ -->
-        <script src="js/bootstrap.min.js"></script>
+        <script src="./js/bootstrap.min.js"></script>
 
         <!-- http://underscorejs.org/ -->
-        <script src="js/underscore-min.js"></script>
-
-        <!-- https://github.com/twitter/typeahead.js/ -->
-        <script src="js/typeahead.jquery.js"></script>
+        <script src="./js/underscore-min.js"></script>
 
         <!-- app's own JavaScript -->
-        <script src="js/song.js"></script>
+        <script src="./js/song.js"></script>
 
         <title>Remix 50!</title>
 
     </head>
     <body id = "content">
+        <iframe id = "youtubeMain" class="video w100" width="640" height="360" src="" frameborder="0" allowfullscreen></iframe>
+
         <iframe id = "spotify_player" src="" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
 
         <span id = "title"></span>
         <span id = "artist"></span>
-
-        <iframe id = "youtubeMain" class="video w100" width="640" height="360" src="" frameborder="0" allowfullscreen></iframe>
 
         <script src="https://apis.google.com/js/client.js?onload=init"></script>
     </body>

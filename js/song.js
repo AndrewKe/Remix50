@@ -7,7 +7,7 @@ $(function() {
 function loadRemixes() {
 	var uri = location.search.split('track=')[1];
 
-    console.log("Configuring spotify...");
+    console.log("Youtube loaded. Now displaying songs ...");
 
     $("#spotify_player").attr("src", "https://embed.spotify.com/?uri=" + "spotify:track:" + uri);
 
@@ -37,7 +37,7 @@ function loadRemixes() {
 		  console.log(videos);
 
 		  var firstId = videos[0].id.videoId
-		  $("#youtubeMain").attr("src","http://www.youtube.com/embed/" + firstId);
+		  $("#youtubeMain").attr("src","https://www.youtube.com/embed/" + firstId);
 		});
 
 		
