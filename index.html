@@ -1,0 +1,62 @@
+<!--
+
+index.html
+
+-->
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+
+        <!-- http://getbootstrap.com/ -->
+        <link href="../css/bootstrap.min.css" rel="stylesheet"/>
+        <link href="../css/bootstrap-theme.min.css" rel="stylesheet"/>
+
+        <!-- app's own CSS -->
+        <link href="../css/styles.css" rel="stylesheet"/>
+
+        <!-- http://jquery.com/ -->
+        <script src="../js/jquery-1.11.1.min.js"></script>
+
+        <!-- http://getbootstrap.com/ -->
+        <script src="../js/bootstrap.min.js"></script>
+
+        <!-- http://underscorejs.org/ -->
+        <script src="../js/underscore-min.js"></script>
+
+        <!-- https://github.com/twitter/typeahead.js/ -->
+        <script src="../js/typeahead.jquery.js"></script>
+
+        <!-- app's own JavaScript -->
+        <script src="../js/search.js"></script>
+
+        <title>Remix 50!</title>
+
+    </head>
+    <body id = "content">
+        <!-- http://getbootstrap.com/css/#forms -->
+        <div id = "top_search_area">
+            <p id = "title_text">Remix 50</p>
+            <form id="form" onsubmit = "return false">
+                <div class="form-group">
+                    <input class="form-control" id="q" placeholder="Enter a song name !" type="text"/>
+                </div>
+            </form>
+        </div>
+
+        <div>
+            <table class = "table table-hover" id = "song_table">
+                <tr class = "song_headers">
+                    <th class="text-center"></th>
+                    <th class="text-center">Song</th>
+                    <th class="text-center">Album</th>
+                    <th class="text-center">Artist</th>
+                    <th class="text-center">Popularity</th>
+                </tr>
+
+            </table>
+        </div>
+
+    </body>
+</html>

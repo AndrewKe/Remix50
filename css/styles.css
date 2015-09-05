@@ -1,0 +1,38 @@
+/**
+ * styles.css
+ *
+ * Computer Science 50
+ * Problem Set 8
+ *
+ * Global CSS.
+ */
+
+/* allow map to fill viewport */
+body
+{
+    /* height of these elements */
+    height: 100%;
+
+    overflow-y:auto;
+}
+
+.song_cell_data
+{
+    text-align: center;
+}
+
+#top_search_area
+{
+    padding-top: 10px;
+    width: 200px;
+    margin: auto;
+}
+
+#title_text
+{
+    font-family: "Arial";
+    font-size: 40px;
+    text-align: center;
+}
+
+
