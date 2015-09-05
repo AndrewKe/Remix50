@@ -42,9 +42,16 @@ function loadRemixes() {
 		// Remixes
 
 		var remixQuery = queryString + " remix"
+		remixQuery.replace("Radio", '');
+		remixQuery.replace("Mix", '');
+		remixQuery.replace("Edit", '');
+		remixQuery.replace("radio", '');
+		remixQuery.replace("mix", '');
+		remixQuery.replace("edit", '');
+
 		console.log(remixQuery);
 		var remixRequest = gapi.client.youtube.search.list({
-		  q: "Avicii Levels Remix",
+		  q: remixQuery,
 		  part: 'snippet',
 		  order: 'relevance',
 		  type: 'video',
